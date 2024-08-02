@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+  <div class="box">
+  <!-- <div class="box" style="margin-right: 60px;"> -->
+    <form onsubmit="signup(event)">
+      <h1>
+        sigin
+      </h1>
+      <input type="text"  placeholder="enter your email" id="email">
+      <input type="password"placeholder="password" id="password">
+      <button type="submit" >submit</button>
+    </form>
+  <!-- </div> -->
+  <!-- <div> -->
+    <form onsubmit="login(event)">
+      <h1>
+        login
+      </h1>
+      <input type="text" placeholder="enter your email" id="login_email">
+      <input type="password" placeholder="password" id="login_password">
+      <button type="submit">login</button>
+      <button onclick="logout()">logout</button>
+    </div>
+    <div class="box" style="height: 500px;">
+      <div class="wellcome-box">
+        <h4>wellcome-box</h4>
+      </div>
+      <div class="center">
+        <h4>your account details</h4>
+        <img src="OIP (2).jpeg" height="auto" class="propic" width="30%" alt="no-img" >
+        <input type="file" accept="image/*" onchange="uploadimg(event)">
+      <div class="userdetails">
+        <!-- <h4>login</h4> -->
+      </div>
+    </form>
+    </div>
+  </div>
+  <div class="box">
+  <div id="model" style="margin-left: 60px;">
+    <form action="" id="editsprofile" onsubmit="userupdate(event)">
+      <h1>userdetails</h1>
+      <input type="text" name="name" placeholder="name">
+      <input type="text" name="profileEmail" placeholder="email">
+      <input type="text" name="phone" placeholder="phone">
+      <input type="text" name="specialty" placeholder="specialty">
+      <input type="text" name="portfolioURL" placeholder="portfolioURL">
+      <input type="text" name="experience" placeholder="experience">
+      <button>added</button>
+    </form>
+  </div>
+  </div>
+  <script src="app.js" defer></script>
+  <script src="firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src= "https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script> 
+  
+ 
+
+  <script>
+      
+const firebaseConfig = {
+apiKey: "AIzaSyA6-wtWv2ZrjhnAIpchOu62sFp-8OicZ1Y",
+authDomain: "test2-6281c.firebaseapp.com",
+projectId: "test2-6281c",
+storageBucket: "test2-6281c.appspot.com",
+messagingSenderId: "387866453919",
+appId: "1:387866453919:web:d5cf7305797a3d0e36ffaa",
+measurementId: "G-7XV2BJ4QQ8"
+}
+
+
+firebase.initializeApp(firebaseConfig);
+  
+</script>
+</body>
+
+</html>
+
+  
